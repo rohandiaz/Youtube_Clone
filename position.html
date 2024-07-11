@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position_Practice</title>
+
+        <style>
+            .head{
+                background-color: black;
+                color: white;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 60px;
+                z-index: 1;
+                           
+            }
+
+            .sidebar{
+                background-color: greenyellow;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                top: 60px;
+                width: 72px; 
+            }
+
+            .position{
+                background-color: blue;
+                color: white;
+                font-size: medium;
+                position: absolute;
+                border: solid;
+                border-color: brown;
+                right: 5px;
+                top: 0px;
+                z-index: 2;
+
+            }
+
+            .position-second{
+                background-color: black;
+                color: white;
+                font-size: medium;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                border-radius: 2px;
+            }
+        </style>
+    </head>
+    <body style="padding-bottom: 1000px;
+                 padding-top:80px;            
+                 padding-left:80px;   
+    ">
+
+        <div class="head">
+            Header
+        </div>
+
+        <div class="sidebar">
+            sidebar
+
+            <div class="position">
+                X
+            </div>
+        </div>
+
+       
+        <div style="
+            background-color:lightblue;
+            height: 200px;
+            width: 200px;
+            position:static;
+
+        ">Div 1</div>
+        <div style="
+            background-color:lightyellow;
+            height: 200px;
+            width: 200px;
+            position:relative;
+            
+        ">Div 2
+            <div class="position-second">
+                5:00
+            </div>
+    
+        </div>
+    </body>
+</html>
